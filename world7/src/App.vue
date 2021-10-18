@@ -3,8 +3,8 @@
     <img alt="Vue logo" src="./assets/cursed-vue-100 x 100.png">
     <p>-------Shit Show VII--------</p>
     <HelloWorld intro="Just like Bzyantium Greece: 7th time's maybe the charm?"/>
-    <Product intro2= "(0 ͡ʖ 0)   ---carry on" />
-    <script type="application/javascript"  src="./assets/product.js"></script>
+    <Product intro2= "---------Product.vue starts here-----------" />
+    <!-- <script type="application/javascript"  src="./assets/product.js"></script> -->
   </div>
 </template>
 
@@ -17,12 +17,12 @@ export default {
   components: {
     HelloWorld,
     Product
-  },
-  mounted () {
-    const externalScript = document.createElement('script')
-    externalScript.setAttribute('src', './assets/product.js')
-    document.head.appendChild(externalScript)
   }
+  // mounted () {
+  //   const externalScript = document.createElement('script')
+  //   externalScript.setAttribute('src', './assets/product.js')
+  //   document.head.appendChild(externalScript)
+  // }
 }
 
 </script>
