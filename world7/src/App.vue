@@ -2,8 +2,9 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/cursed-vue-100 x 100.png">
     <p>-------Shit Show VII--------</p>
-    <HelloWorld intro="Just like Bzyantium Greece: 7th time's maybe the charm?"/>
+    <HelloWorld intro="**Input Rant Here"/>
     <Product intro2= "---------Product.vue starts here-----------" />
+    <h3>jyruciyciy</h3>
     <!-- <script type="application/javascript"  src="./assets/product.js"></script> -->
   </div>
 </template>

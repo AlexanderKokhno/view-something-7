@@ -5,10 +5,9 @@
     <ul>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
     </ul>
-    <h3>I Think I’m Going to Kill Myself
-      -- Elton John</h3>
+    <h3>Rick Roll</h3>
     <ul>
-      <li><a href="https://www.youtube.com/watch?v=3izV86N-ASU">Music Video</a></li>
+      <li><a href="https://youtu.be/dQw4w9WgXcQ">HERE</a></li>
     </ul>
   </div>
 </template>
