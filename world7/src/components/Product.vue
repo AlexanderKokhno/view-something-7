@@ -1,5 +1,5 @@
 <template>
-  <div class="product">
+  <div class="product" id="product">
     <h2>fcjh</h2>
     <h1>{{ intro2 }}</h1>
     <div class="product-image" id="product-image">
@@ -12,10 +12,10 @@
       <p v-else>Out of Stock</p>
       <p v-show="inStock">erdsfdsfds</p>
       <ul>
-        <li v-bind:v-for="detail in details">{{detail}}</li>
+        <li :v-for="detail in details" :key="detail.INDdetails">{{ detail.INDdetail }}</li>
       </ul>
-      <div :v-for="variant in variants" :key="variant.variantId" class="color-box" :style="{backgroundColor:variant.variantColor}" @mouseover="updateProduct(variant.variantImage)">
-      </div>
+      <!-- <div :v-for="variant in variants" :key="variant.variantId" class="color-box" :style="{backgroundColor:variant.variantColor}" @mouseover="updateProduct(variant.variantImage)">
+      </div> -->
       <button v-on:click="addToCart">Add to Cart</button>
       <div class="Cart">
         <p>Cart({{cart}})</p>
@@ -37,7 +37,9 @@ export default {
       image: require('../assets/sexy-socks.jpg'),
       inventory: 0,
       inStock: false,
-      details: ['80% cotton', '20% polyester', 'Stay on during ***'],
+      details: [
+        { INDdetail: '80% cotton' }, { INDdetail: '20% polyester' }, { INDdetail: 'Stay on during ***' }
+      ],
       variants: [
         {
           variantId: 2234,
@@ -53,11 +55,13 @@ export default {
       cart: 0
     }
   },
-  addToCart: function () {
-    this.cart += 1
-  },
-  updateProduct (variantImage) {
-    this.image = variantImage
+  methods: {
+    addToCart: function () {
+      this.cart += 1
+    },
+    updateProduct (variantImage) {
+      this.image = variantImage
+    }
   }
 }
 </script>
