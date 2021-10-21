@@ -12,7 +12,7 @@
       <p v-else>Out of Stock</p>
       <p v-show="inStock">erdsfdsfds</p>
       <ul>
-        <li :v-for="detail in details" :key="detail.INDdetails">{{ detail.INDdetail }}</li>
+        <li :v-for="detail in details" :key="detail.INDdetail">{{ detail.INDdetail }}</li>
       </ul>
       <!-- <div :v-for="variant in variants" :key="variant.variantId" class="color-box" :style="{backgroundColor:variant.variantColor}" @mouseover="updateProduct(variant.variantImage)">
       </div> -->
