@@ -6,13 +6,13 @@
       <img v-bind:src=image>
     </div>
     <div class="product-info" id="product-info">
-      <h1>{{ productD }}</h1>
+      <h3>{{ productD }}</h3>
       <p v-if="inventory > 10">In Stock</p>
       <p v-else-if="inventory <= 10 && inventory > 0">Almost Sold out</p>
       <p v-else>Out of Stock</p>
       <p v-show="inStock">erdsfdsfds</p>
       <ul>
-        <li :v-for="detail in details" :key="detail.INDdetail">{{ detail.INDdetail }}</li>
+        <li v-for="detail in details" :key="detail">{{ detail.INDdetail }}</li>
       </ul>
       <!-- <div :v-for="variant in variants" :key="variant.variantId" class="color-box" :style="{backgroundColor:variant.variantColor}" @mouseover="updateProduct(variant.variantImage)">
       </div> -->
